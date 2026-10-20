@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İletişim | OrphaRx Pharmaceuticals</title>
+<meta name="description" content="Türkiye pazarı için dağıtım, ticarileştirme veya lisans alma fırsatını görüşmek üzere OrphaRx ile iletişime geçin.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="nav__logo" href="index.html" aria-label="OrphaRx home"><img src="../assets/images/logo.svg" alt="OrphaRx Pharmaceuticals" width="180" height="60"></a>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html" class="nav__link">Ana Sayfa</a>
+      <a href="about.html" class="nav__link">Hakkımızda</a>
+      <a href="our-focus.html" class="nav__link">Odak Alanımız</a>
+      <a href="partnerships.html" class="nav__link">Ortaklıklar</a>
+      <a href="founders.html" class="nav__link">Kurucularımız</a>
+      <a href="contact.html" class="nav__link nav__link--cta is-active">İletişim</a>
+      <a href="../en/contact.html" class="nav__lang">EN</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section reveal">
+  <div class="container contact-layout">
+    <div>
+      <p class="section__eyebrow">İletişim</p>
+      <h1 class="section__title">Bir Görüşme Başlatalım</h1>
+      <p class="section__lead">Türkiye'de nadir hastalık, yetim ve özel ilaçlar için fırsatları değerlendiren ilaç ve biyoteknoloji şirketlerinden gelen görüşme taleplerini memnuniyetle karşılıyoruz.</p>
+      <p class="section__lead">İster olası bir dağıtım ortaklığını, ticarileştirme fırsatını ister lisans alma fırsatını değerlendiriyor olun, ekibimiz ürünü incelemekten ve OrphaRx ile olası uyumunu görüşmekten memnuniyet duyacaktır.</p>
+
+      <div class="contact-info__item" style="margin-top:32px;">
+        <p class="contact-info__label">E-posta</p>
+        <p class="contact-info__value"><a href="mailto:brand@orpharx.com">brand@orpharx.com</a></p>
+      </div>
+      <div class="contact-info__item">
+        <p class="contact-info__label">Konum</p>
+        <p class="contact-info__value">Levent, İstanbul, Türkiye</p>
+      </div>
+    </div>
+
+    <form id="contactForm" class="contact-form" action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID" method="POST" data-success-message="Teşekkür ederiz — talebiniz iletildi. En kısa sürede sizinle iletişime geçeceğiz." data-error-message="Talebiniz gönderilirken bir sorun oluştu. Lütfen tekrar deneyin veya doğrudan brand@orpharx.com adresine yazın.">
+      <div class="form-row">
+        <div class="form-field"><label for="company">Şirket</label><input type="text" id="company" name="Company" required></div>
+        <div class="form-field"><label for="name">Ad Soyad</label><input type="text" id="name" name="Name" required></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label for="position">Unvan</label><input type="text" id="position" name="Position"></div>
+        <div class="form-field"><label for="email">E-posta</label><input type="email" id="email" name="Email" required></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label for="phone">Telefon</label><input type="tel" id="phone" name="Phone"></div>
+        <div class="form-field"><label for="product">Ürün / Molekül</label><input type="text" id="product" name="Product / Molecule"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label for="therapeutic-area">Terapötik Alan</label><input type="text" id="therapeutic-area" name="Therapeutic Area"></div>
+        <div class="form-field">
+          <label for="partnership-interest">Ortaklık İlgisi</label>
+          <select id="partnership-interest" name="Partnership Interest">
+            <option value="Dağıtım Ortaklığı">Dağıtım Ortaklığı</option>
+            <option value="Ticarileştirme Ortaklığı">Ticarileştirme Ortaklığı</option>
+            <option value="Lisans Alma Fırsatı">Lisans Alma Fırsatı</option>
+            <option value="Stratejik Ürün Ortaklığı">Stratejik Ürün Ortaklığı</option>
+            <option value="Diğer">Diğer</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="message">Mesaj</label>
+        <textarea id="message" name="Message" required></textarea>
+      </div>
+      <p class="form-note">Şirket, Ad Soyad ve E-posta alanları zorunludur.</p>
+      <button type="submit" class="btn btn--primary">Talebi Gönder</button>
+      <p id="formStatus" class="form-status" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <div class="footer__brand"><img src="../assets/images/logo-white.svg" alt="OrphaRx Pharmaceuticals" class="footer__logo" width="160" height="53"><p class="footer__address">Levent, İstanbul, Türkiye</p></div>
+    <nav class="footer__links"><a href="index.html">Ana Sayfa</a><a href="about.html">Hakkımızda</a><a href="our-focus.html">Odak Alanımız</a><a href="partnerships.html">Ortaklıklar</a><a href="founders.html">Kurucularımız</a><a href="contact.html">İletişim</a></nav>
+    <div class="footer__contact"><a href="mailto:brand@orpharx.com">brand@orpharx.com</a></div>
+  </div>
+  <div class="container footer__copy"><p>&copy; 2026 OrphaRx Pharmaceuticals. Tüm hakları saklıdır.</p></div>
+</footer>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/animations.js"></script>
+</body>
+</html>
