@@ -126,7 +126,7 @@ h1,h2,h3,p{margin:0;}
 .cta-banner__text{font-size:17px;max-width:620px;margin:0 auto 32px;color:#E4FAF6;}
 
 /* Founders */
-.founder-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
+.founder-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;}
 .founder-card{background:var(--white);border:1px solid var(--grey);border-radius:var(--radius);padding:36px 28px;text-align:center;box-shadow:var(--shadow);}
 .founder-avatar{width:88px;height:88px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:var(--white);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:28px;font-weight:600;margin:0 auto 20px;}
 .founder-card__name{font-size:19px;font-weight:600;margin-bottom:4px;}
