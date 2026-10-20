@@ -168,3 +168,6 @@ h1,h2,h3,p{margin:0;}
 .form-status.is-success{display:block;color:#1c7a3e;}
 .form-status.is-error{display:block;color:#b3261e;}
 @media(max-width:900px){.contact-layout{grid-template-columns:1fr;}.form-row{grid-template-columns:1fr;}}
+
+.intro-grid__art--photo{max-width:480px;border-radius:20px;}
+@media(max-width:860px){.intro-grid__art--photo{max-width:480px;}}
